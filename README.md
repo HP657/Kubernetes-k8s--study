@@ -2,6 +2,8 @@
 
 ## Pod
 
+### 1
+
 - kubectl apply -f [yaml 파일]
     - YAML 파일에 정의된 리소스(Pod 등)를 생성하거나 수정하는 명령어
 
@@ -25,3 +27,13 @@
 
 - kubectl delete -f [yaml 파일]
     - YAML 파일로 생성한 리소스 삭제
+
+### 2
+- 이미지 풀 정책 (Image Pull Policy)
+  - Always 로컬 이미지 가져오지 않고 레지스트리(DockerHup이나 외부의 이미지)를 가져오게됨 
+  - IfNotPresent 로컬이미지를 가져오고 없다면 레지스트리에서 가져옴 
+  - Never 로컬에서만 이미지 가져옴
+
+- image에 latest거나 명시하지 않으면 Always로 설정 
+- latest가 아니면 IfNotPresent로 설정
+
