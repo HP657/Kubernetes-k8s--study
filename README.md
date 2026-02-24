@@ -50,13 +50,44 @@
 - pod 내용 복사를 통한 pod 수평적 확장 진행
 
 ### 4
-- 디플로이먼트(Deployment)
-  - pod를 묶음으로 쉽게 관리하는 기능
-  - pod를 자동 배포
-  - pod의 수를 지정하는 대로 여러 파드를 쉽게 생성
-  - pod의 비정상적인 종료가 되면 새로운 파드를 생성해 파드 수를 유지
-  - 일괄된 파드를 일시중지, 삭제, 업데이트를 한번에 가능
+- 디플로이먼트 (Deployment)
+  - Pod를 묶어서 관리
+  - Pod 자동 배포
+  - 원하는 개수만큼 Pod 생성
+  - Pod 비정상 종료 시 자동 재생성
+  - 롤링 업데이트 가능
+  - 일괄 중지 / 삭제 / 업데이트 가능
 
-- 디플로이먼트가 레플리카셋(ReplicaSet)을 관리하고, 레플리카셋이 여러 파드를 관리하는 구조
-  - 레플리카(Replica): 복제본
-  - 레플리카셋: 복제본끼리의 묶음
+
+- kubectl get deployment
+  - Deployment 목록 조회
+
+- kubectl describe deployment [deployment 이름]
+  - Deployment 상세 정보 확인
+
+- kubectl delete deployment [deployment 이름]
+  - 특정 Deployment 삭제
+
+
+### 5
+
+- 레플리카셋 (ReplicaSet)
+
+  - 지정된 개수만큼 Pod 복제 유지
+  - Deployment가 자동 생성 및 관리
+
+- kubectl get replicaset
+  - ReplicaSet 조회
+
+- kubectl get rs
+  - replicaset 축약어
+
+- 구조
+  Deployment
+  ↓
+  ReplicaSet
+  ↓
+  Pod
+
+- 레플리카(Replica)
+  - 동일한 Pod의 복제본
