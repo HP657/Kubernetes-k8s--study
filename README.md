@@ -27,6 +27,15 @@
 
 - kubectl delete -f [yaml 파일]
     - YAML 파일로 생성한 리소스 삭제
+  
+- kubectl describe pods [pod 이름]
+  - pod가 생성되면서 발생한 이벤트 로그 출력 (디버깅 할떄 많이 쓰임)
+  
+- kubectl logs [pod 이름]
+  - pod에서 발생한 로그 출력 (디버깅 할떄 많이 쓰임)
+
+- kubectl logs [pod 이름]
+  - pod에서 발생한 로그 출력 (디버깅 할떄 많이 쓰임)
 
 ### 2
 - 이미지 풀 정책 (Image Pull Policy)
@@ -39,4 +48,3 @@
 
 ### 3 
 - pod 내용 복사를 통한 pod 수평적 확장 진행
-
