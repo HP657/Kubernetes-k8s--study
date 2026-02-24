@@ -37,3 +37,6 @@
 - image에 latest거나 명시하지 않으면 Always로 설정 
 - latest가 아니면 IfNotPresent로 설정
 
+### 3 
+- pod 내용 복사를 통한 pod 수평적 확장 진행
+
