@@ -1,8 +1,6 @@
 # 명령어 정리
 
-## Pod
-
-### 1
+### 기본 명령어 - Pod
 
 - kubectl apply -f [yaml 파일]
     - YAML 파일에 정의된 리소스(Pod 등)를 생성하거나 수정하는 명령어
@@ -37,7 +35,7 @@
 - kubectl logs [pod 이름]
   - pod에서 발생한 로그 출력 (디버깅 할떄 많이 쓰임)
 
-### 2
+### Image Pull Policy
 - 이미지 풀 정책 (Image Pull Policy)
   - Always 로컬 이미지 가져오지 않고 레지스트리(DockerHup이나 외부의 이미지)를 가져오게됨 
   - IfNotPresent 로컬이미지를 가져오고 없다면 레지스트리에서 가져옴 
@@ -46,10 +44,10 @@
 - image에 latest거나 명시하지 않으면 Always로 설정 
 - latest가 아니면 IfNotPresent로 설정
 
-### 3 
+### 수평적 확장
 - pod 내용 복사를 통한 pod 수평적 확장 진행
 
-### 4
+### Deployment
 - 디플로이먼트 (Deployment)
   - Pod를 묶어서 관리
   - Pod 자동 배포
@@ -69,7 +67,7 @@
   - 특정 Deployment 삭제
 
 
-### 5
+### ReplicaSet
 
 - 레플리카셋 (ReplicaSet)
 
@@ -92,7 +90,7 @@
 - 레플리카(Replica)
   - 동일한 Pod의 복제본
 
-### 6
+### Service
 - 서비스는 외부로부터 들어오는 트래픽을 받아서 균등하게 트래픽을 분배해주는 로드밸런서 역할을 하는 기능
 - 사용자는 서비스를 거쳐 요청을 받아 여러 pod에 균등하게 분배해줌
 
