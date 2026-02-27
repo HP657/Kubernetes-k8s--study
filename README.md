@@ -101,3 +101,12 @@
 
 - kubectl get service
   - service 조회
+
+### Self Healing
+- 컨테이너가 죽으면 재시작하여 살린다.
+- docker ps
+  - 현재 컨테이너 조회
+- docker kill [Container ID]
+  - 컨테이너 일부 죽음
+
+하지만 쿠버네티스에선 정해진 pod 갯수가 있기떄문에 컨테이너 재시작으로 갯수를 맞춘다.
