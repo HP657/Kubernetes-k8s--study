@@ -110,3 +110,11 @@
   - 컨테이너 일부 죽음
 
 하지만 쿠버네티스에선 정해진 pod 갯수가 있기떄문에 컨테이너 재시작으로 갯수를 맞춘다.
+
+### Deployment 적용 안되는 문제
+- ./gradlew clean build
+- docker build -t [적용할거] .
+- kubectl apply -f [적용할거]
+
+적용 안됐을떄 (재시작)
+- kubectl rollout restaert [적용할모드] [적용할거]
