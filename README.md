@@ -1,3 +1,5 @@
+# 강의 자료 및 요약본
+https://www.youtube.com/watch?v=3spPR3gAiAo&list=PLtUgHNmvcs6pBvcX0ilCncJRgBHNs40vX&index=22
 # 명령어 정리
 
 ### 기본 명령어 - Pod
